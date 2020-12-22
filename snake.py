@@ -39,8 +39,7 @@ while True:
         length += 1
         score += 1
         fps += 1
-    if x < 0 or x > RES - SIZE or y < 0 or
-    y > RES - SIZE or len(snake) != len(set(snake)):
+    if x < 0 or x > RES - SIZE or y < 0 or y > RES - SIZE or len(snake) != len(set(snake)):
         while True:
             render_end = font_end.render('GAME OVER', 1,
                                          pygame.Color('orange'))
